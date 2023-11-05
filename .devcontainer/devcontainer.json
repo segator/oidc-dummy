@@ -1,5 +1,6 @@
 {
   "name": "Devbox",  
+  "image":"mcr.microsoft.com/vscode/devcontainers/base",
   //"dockerFile": "Dockerfile",
   "customizations": {
     "vscode": {
