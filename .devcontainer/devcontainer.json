@@ -13,8 +13,7 @@
        "version": "latest",
        "moby": true
      },
-    "ghcr.io/devcontainers-community/features/direnv:1": {},
-    "ghcr.io/devcontainers/features/nix:1": {    
-    }  
+    "ghcr.io/devcontainers-community/features/direnv:1": {}
+
   }
 }
