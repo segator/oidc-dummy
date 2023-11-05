@@ -1,0 +1,17 @@
+{
+    "name": "Devbox",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "direnv.direnv"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers-community/features/direnv": {}
+    },
+    "postCreateCommand": "./devcontainer/post-create.sh"
+  }
