@@ -1,17 +1,21 @@
 {
-    "name": "Devbox",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "direnv.direnv"
-            ]
-        }
-    },
-    "features": {        
-        "ghcr.io/devcontainers-community/features/direnv:1": {},
-        "ghcr.io/devcontainers/features/nix:1": {
-            "packages": "devbox"
-        }  
-    },
-    "postCreateCommand": "./devcontainer/post-create.sh"
+  "name": "Devbox",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "direnv.direnv"
+      ]
+    }
+  },
+  "features": {  
+     "ghcr.io/devcontainers/features/docker-in-docker:1": {
+       "version": "latest",
+       "moby": true
+     },
+    "ghcr.io/devcontainers-community/features/direnv:1": {},
+    "ghcr.io/devcontainers/features/nix:1": {
+      "packages": "devbox"
+    }  
   }
+}
