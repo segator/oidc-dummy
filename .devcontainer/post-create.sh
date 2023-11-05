@@ -1,4 +1,4 @@
 #!/bin/bash
-direnv allow .
 eval "$(direnv hook bash)" >> ~/.bashrc
+direnv allow .
 source ~/.bashrc
