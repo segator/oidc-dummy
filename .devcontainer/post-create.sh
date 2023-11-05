@@ -1,2 +1,4 @@
-#!/bin/sh
-echo "Hello my friend"
+#!/bin/bash
+direnv allow .
+eval "$(direnv hook bash)" >> ~/.bashrc
+source ~/.bashrc

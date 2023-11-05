@@ -8,8 +8,9 @@
       }
     }
   },
+  "postCreateCommand": "./devcontainer/post-create.sh",
   "features": {
-    "ghcr.io/devcontainers-community/features/direnv:1": {},
+    "ghcr.io/devcontainers-contrib/features/direnv:1": {},
     "ghcr.io/devcontainers/features/nix:1": {}
   }  
 }
